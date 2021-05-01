@@ -1,2 +1,2 @@
-# VougeOn---Virtual-TryON
+# VougeOn-Virtual-TryON
 Virtual TryOn System
