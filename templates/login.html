@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Just Try It - Login</title>
+  <link rel="stylesheet" href="../static/assets/css/style_login.css">
+  <link rel="icon" type="image/png" href="static/assets/images/Logo.png"/>
+
+</head>
+<body> 
+<!-- partial:index.partial.html -->
+<div class="form-structor" style="margin-top: 300px; margin-left: 40px; margin-right: -750px; margin-top: 470px;">
+	<div class="signup">
+		<h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+		<div class="form-holder">
+			<input type="text" class="input" placeholder="Name" id="name">
+			<input type="email" class="input" placeholder="Email" id="email">
+			<input type="password" class="input" placeholder="Password" id="password">
+		</div>
+		<a><button onclick="RegisterUser()" class="submit-btn">Sign up</button></a>
+	</div>
+	<div class="login slide-up">
+		<div class="center">
+			<h2 class="form-title" id="login"><span>or</span>Log in</h2>
+			<div class="form-holder">
+				<input type="email" class="input" placeholder="Email" id="mailid">
+				<input type="password" class="input" placeholder="Password" id="pass">
+			</div>
+			<a><button onclick="LoginUser()" class="submit-btn">Log in</button></a>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script  src="../static/assets/js/script_login.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script> 
+  <script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+	  apiKey: "AIzaSyALMSNrStimRYU8sMmbgl1SByJ5lLG5ekQ",
+	  authDomain: "justtryit.firebaseapp.com",
+	  projectId: "justtryit",
+	  storageBucket: "justtryit.appspot.com",
+	  messagingSenderId: "157654464185",
+	  appId: "1:157654464185:web:e32ad1c3b1aeaf4ca7cd68"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+
+	function LoginUser(){
+    var email=document.getElementById('mailid').value;
+    var password=document.getElementById('pass').value;
+    firebase.auth().signInWithEmailAndPassword(email,password).then(function(){
+     var id=firebase.auth().currentUser.uid;
+     localStorage.setItem('id',id);
+     window.location.replace("{{ url_for('Home') }}");
+    }).catch(function(error){
+ 
+     var errorCode=error.code;
+     var errorMsg=error.message;
+     window.alert("Error : " +errorMsg)
+ 
+    });
+    }
+
+    function RegisterUser() {
+        var email=document.getElementById('email').value;
+        var password=document.getElementById('password').value;
+		user_name = document.getElementById('name').value;
+        firebase.auth().createUserWithEmailAndPassword(email,password).then(function(){
+         var id=firebase.auth().currentUser.uid;
+		 name1 = email.substring(0, email.lastIndexOf("@"));
+		 firebase.database().ref('profile/'+name1).set({
+            Name: user_name
+          });
+         window.alert('Successfully Signup! Now Login');
+        }).catch(function(error){
+     
+         var errorcode=error.code;
+         var errormsg=error.message;
+         window.alert("Error : " +errorMsg)
+        });
+    }
+
+  </script>
+</body>
+</html>

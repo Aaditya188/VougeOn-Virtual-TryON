@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Just Try It - Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&amp;subset=latin-ext" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="../static/assets/assets/css/main.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="static/assets/images/Logo.png"/>
+
+        <!-- JS -->
+        <script src="../static/assets/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="../static/assets/assets/js/vendor/jquery-1.12.0.min.js"></script>
+    </head>
+    <body>
+        <div class="site" id="page">
+            <a class="skip-link sr-only" href="#main">Skip to content</a>
+
+            <!-- Options headline effects: .rotate | .slide | .zoom | .push | .clip -->
+            <section>
+             <div class="hero-section hero-section--image clearfix clip">
+                <div class="hero-section__wrap">
+                    <div class="hero-section__option" data-init="slick" data-arrows="false" data-dots="true" data-fade="false" data-autoplay="5000" data-speed="3000">
+                        <img src="static/assets/images/index.jpg" alt="Hero section image">
+                        <img src="static/assets/images/index-slider1.jpg" alt="Hero section image">
+                        <img src="static/assets/images/index-slider2.jpg" alt="Hero section image">
+                    </div>
+                    <!-- .hero-section__option -->
+ 
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-2 col-lg-8">
+                                <div class="title-01 title-01--11 text-center">
+                                    <h2 class="title__heading">
+                                        <span>We are</span>
+                                        <strong class="hero-section__words">
+                                            <span class="title__effect is-visible">Awesome </span>
+                                            <span class="title__effect">Creative </span>
+                                            <span class="title__effect">Free </span>
+                                            <span class="title__effect">Nexus </span>
+                                        </strong>
+                                    </h2>
+                                    <div class="title__description">Redesigning the Concept of Online Shopping at Home</div>
+
+                                    <!-- Options btn color: .btn-success | .btn-info | .btn-warning | .btn-danger | .btn-primary -->
+                                    <div class="title__action"><a href="{{ url_for('Home') }}" class="btn btn-success">Get Started</a></div>
+                                </div> <!-- .title-01 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+
+        <!-- JS -->
+        <script src="../static/assets/assets/js/plugins/slick.min.js"></script>
+        <script src="../static/assets/assets/js/plugins/animate-headline.js"></script>
+        <script src="../static/assets/assets/js/main.js"></script>
+    </body>
+</html>
