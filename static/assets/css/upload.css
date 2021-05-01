@@ -1,0 +1,128 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header-title-bar {
+  height: 8.125rem;
+  background-color: #c5c7c945;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #434343;
+  text-align: center;
+}
+
+.upload {
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em auto;
+  margin-bottom: 1em;
+  padding: 2em;
+  color: #434343;
+  cursor: pointer;
+  border: 0.1875em dashed #c5c7c945;
+}
+.upload svg {
+  width: 15em;
+  transition: all 0.4s ease;
+}
+.upload svg path {
+  transition: all 0.4s ease;
+}
+.upload .cloud-img {
+  padding-top: 3em;
+}
+.upload input {
+  display: none;
+}
+.upload .img-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5em;
+  position: relative;
+}
+.upload .img-title span.clarify {
+  display: block;
+  color: #999999;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(101%);
+}
+.upload .blue {
+  color: #3588b9;
+  text-decoration: none;
+  cursor: pointer;
+}
+.upload .img-subtitle {
+  color: #999999;
+}
+.upload.highlight {
+  border-color: salmon;
+}
+.upload.highlight svg {
+  transform: scale(1.1);
+}
+.upload.highlight svg path {
+  fill: #209957;
+}
+
+.d-none {
+  display: none;
+}
+
+.btn {
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 16px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  background-color: #209957;
+  position: relative;
+  border: none;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2em;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+}
+
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  width: 80%;
+  margin: 1em auto;
+}
