@@ -62,6 +62,8 @@ Check the Documentation section for Video and PPT
 
 - eJS,CSS,Bootstrap
 
+- Flask.
+
 - ALAN AI Speech recognition API
 
 - Firebase Authentication.
