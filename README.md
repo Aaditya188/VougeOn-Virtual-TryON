@@ -10,6 +10,8 @@ Open Innovation: An open-ended theme where the only restriction is your imaginat
 
 We NEXUS present before you,<b>"VougeOn - Virtual TryOn"</b>.
 
+<img width=40% src="Logo.png"> &ensp;
+
 
 ## Our Inspirarion
 The whole revolution that this pandemic brought upon our lives has only sped up the process of every business going online. In such times, where e-commerce and e-shopping sites were already booming, having no choice but take to online shops has somewhere changed the user experience dynamics. Decision making is tougher in certain areas,  a major one being fashion.<br>
@@ -52,7 +54,7 @@ $ python main.py
 <img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.35.18.jpeg"> &ensp;
 <img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.24.jpeg"> &ensp;
 <img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.37.01.jpeg"> &ensp;
-<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.38.34.jpegww"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.38.34.jpeg"> &ensp;
 
 
 
