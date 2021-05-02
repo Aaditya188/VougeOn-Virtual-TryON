@@ -17,9 +17,6 @@ We NEXUS present before you,<b>"VougeOn - Virtual TryOn"</b>.
 The whole revolution that this pandemic brought upon our lives has only sped up the process of every business going online. In such times, where e-commerce and e-shopping sites were already booming, having no choice but take to online shops has somewhere changed the user experience dynamics. Decision making is tougher in certain areas,  a major one being fashion.<br>
 Choosing apparels and accessories by looking at them on models only pose a limited imagination, and thus the whole tedious process ordering and returning becomes a task in itself for both customers and brands. Hence, we thought of bringing the experience of offline shopping to the customers at home by using virtual reality and AI.
 
-
-Our Approach : Amidst the raging world COVID 19 pandemic, the world is adapting so many new ways. Everything has pakced its parcel and moved online. So has shopping. So why not do it right?
-
 ## Requirements
 Python 3.8 or above with all [requirements](requirements.txt) dependencies installed. To install run:
 ```python
