@@ -10,7 +10,7 @@ Open Innovation: An open-ended theme where the only restriction is your imaginat
 
 We NEXUS present before you,<b>"VougeOn - Virtual TryOn"</b>.
 
-<img width=40% src="Logo.png"> &ensp;
+<img width=40% src="images/VougeOn.png"> &ensp;
 
 
 ## Our Inspirarion
