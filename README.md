@@ -2,9 +2,13 @@
 Virtual TryOn System
 
 # Submission by Team NEXUS for TetraFlip
-Entry of NEXUS, from SRM Institute of Science and Technology, Kattankulathur, to TetraFlip.
 
 Open Innovation: An open-ended theme where the only restriction is your imagination. Build the ideas that you believe in and make a difference. It can either be hardware or software.
+
+
+<h2 align= "left"><b>Our Product</b></h2>
+
+We NEXUS present before you,<b>"VougeOn - Virtual TryOn"</b>.
 
 
 ## Our Inspirarion
@@ -28,12 +32,7 @@ $ python main.py
 ```
 3. Chnage the code of **self.video = cv2.VideoCapture(1)** to **self.video = cv2.VideoCapture(0)**, if you want to use PC webcam, we have used Mobile Camera as Canera because of High Quality Cameras.<br>
    Software Used to Connect Phone Camera to PC : DroidCam (available on Play Store and https://www.dev47apps.com/droidcam/windows/)
-   
-
-
-<h2 align= "left"><b>Our Product</b></h2>
-
-We NEXUS present before you,<b>"VougeOn - Virtual TryOn"</b>.
+ 
 
 # WHAT YOU WILL EXPERIECNE ?
   For brands, a virtual try-on can make a significant difference when it comes to marketing and sales.
@@ -42,14 +41,18 @@ We NEXUS present before you,<b>"VougeOn - Virtual TryOn"</b>.
 
 <h2 align= "left"><b>Website in a Print view</b></h2>
 
-<p align="left">
+<p align="left">  
 
-<img width=40% src="Screenshots/Home.jpg"> &ensp;
-<img width=40% src="Screenshots/Who we are.jpg"> &ensp;
-<img width=40% src="Screenshots/Service.jpg"> &ensp;
-<img width=40% src="Screenshots/Contact.jpg"> &ensp;
-<img width=40% src="Screenshots/ChatBot.jpeg"> &ensp;
-<img width=40% src="Screenshots/Login Page.jpg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.37.27.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.30.41.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.31.04.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.33.32.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.34.17.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.34.55.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.35.18.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.24.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.37.01.jpeg"> &ensp;
+<img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.38.34.jpegww"> &ensp;
 
 
 
@@ -65,7 +68,14 @@ Check the Documentation section for Video and PPT
 
 - Firebase Authentication.
 
- ## Models we used for Testing, you can try it on your own too just pan the camera towards you :
+<h2 align= "left"><b>Project Maintainers :</b></h2>
+
+<p align="left">
+  <img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.42.jpeg"> &ensp;
+  
+
+
+ ## Models we used for Testing, you can try it on your own too just pan the camera towards you
  
  ## Accessories Model
  ![Model for Accessories](Screenshots/Access_model.jpeg)
