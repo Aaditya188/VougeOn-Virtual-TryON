@@ -80,12 +80,12 @@ Check the Documentation section for Video and PPT
  ## Models we used for Testing, you can try it on your own too just pan the camera towards you
  
  ## Accessories Model
- ![Model for Accessories](Screenshots/Access_model.jpeg)
+ ![Model for Accessories](images/Access_model.jpeg)
  
  
  ## Frocks Model
- ![Model for Frocks](Screenshots/Frock_model.jpeg)
+ ![Model for Frocks](images/Frock_model.jpeg)
  
  
  ## Tops Model
- ![Model for Tops](Screenshots/Tops_model.jpeg)
+ ![Model for Tops](images/Tops_model.jpeg)
