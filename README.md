@@ -79,6 +79,6 @@ Check the Documentation section for Video and PPT
 <img width=40% src="images/Tops_model.jpeg"> &ensp;  
 
 
-<h2 align= "left"><b>Project Maintainers :</b></h2>
+<h2 align= "left"><b>Meet Our Project Maintainers :</b></h2>
 <p align="left">
   <img width=70% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.42.jpeg"> &ensp;
