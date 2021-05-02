@@ -66,11 +66,6 @@ Check the Documentation section for Video and PPT
 
 - Firebase Authentication.
 
-<h2 align= "left"><b>Project Maintainers :</b></h2>
-<p align="left">
-  <img width=70% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.42.jpeg"> &ensp;
-  
-
 
 ## Models we used for Testing, you can try it on your own too just pan the camera towards you
  
@@ -82,3 +77,8 @@ Check the Documentation section for Video and PPT
 
 ## Tops Model  
 <img width=40% src="images/Tops_model.jpeg"> &ensp;  
+
+
+<h2 align= "left"><b>Project Maintainers :</b></h2>
+<p align="left">
+  <img width=70% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.42.jpeg"> &ensp;
