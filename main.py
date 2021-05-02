@@ -55,7 +55,6 @@ def upload():
             file.filename="8.png"
             file.save("static/assets/images/Frocks5/"+file.filename)
             time.sleep(1)
-            return render_template('Home.html')
     return render_template('upload.html')
 
 def allowed_file(filename):
