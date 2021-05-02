@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <style>
+    body{overflow: hidden;}
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <title>Upload</title>
+  <link rel="icon" type="image/png" href="static/assets/images/Logo.png"/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap'><link rel="stylesheet" href="../static/assets/css/upload.css">
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="../static/assets/css/upload2.css">
+</head>
+
+<body>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="wrap">
+      
+      <div id="blurb">
+        
+      </div>
+      
+      <div class="line-reveal" id="line-a">
+        <div class="overlay"></div>
+        <div class="line"></div>
+      </div>
+      
+      <div class="line-reveal" id="line-b">
+        <div class="overlay"></div>
+        <div class="line"></div>
+      </div>
+      
+      <div class="line-reveal" id="line-c">
+        <div class="overlay"></div>
+        <div class="line"></div>
+      </div>
+      
+    </div>
+    <!-- partial -->
+      
+    </body>
+  <header id="header" class="fixed-top " style="margin-top: 30px;">
+    <div class="container d-flex align-items-center">
+      <nav id="navbar" class="navbar" >
+        <ul>
+          <a class="btn btn-danger " href="{{ url_for('Home') }}" style="background: linear-gradient(to top,#ba5370,#f4e2d8);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Home <i class="bi bi-house-fill"></i></a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <main>
+    <script>
+      
+      function move() {
+        var i = 0;
+        if(document.getElementById("uploadBills").files.length != 0 ){
+          if (i == 0) {
+          i = 1;
+          var elem = document.getElementById("pb");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+              i = 0;
+            } else {
+              width++;
+              elem.style.width = width + "%";
+            }
+          }
+        }
+       
+        flag();
+      }
+            else{
+              window.alert("Please select an image");
+            }
+      }
+      function flag(){
+       
+                window.alert("Cool! Your Product is Added to TryOn List");   
+                  document.getElementById("check").src="static/assets/images/checkmark.gif";
+      }
+      
+    </script>
+    <section style="margin-top: 150px;">
+      
+      <label for="uploadBills" class="upload" id="uploadBox">
+        
+        <img src="static/assets/images/ok.png" style="width:300px;height:300px;" id="check">
+          <h3 class="img-title" id="drag-title" style="color: aliceblue;">
+            Drag and drop to upload
+          </h3>
+          <p class="img-subtitle" id="drag-subTitle" style="color: aliceblue;">
+            or <span class="blue">Browse</span> to choose a image
+          </p>
+          <h3 class="img-title uploading d-none">Uploading...</h3>
+          <h3 class="img-title done d-none">
+            Done. <span class="blue">Upload More</span>
+          </h3>
+          
+          <form method="POST" enctype = "multipart/form-data">
+            <input type="file" name="uploadBills" method="POST" id="uploadBills">
+            <button class="btn" id="submitButton" onclick="move();" style="margin-right: 100px;margin-top: 50px;">
+              Upload
+              <i class="bi bi-cloud-plus-fill"></i>
+            </button>
+            <div class="success d-none">Files sent</div>
+        <div class="progress" id="pb" style="opacity: 0.3;">
+          <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="myBar" style="width: 0%"></div>
+        </div>
+          </form>
+          <br></br>
+          <a onclick="check_out()" style='margin-right:16px'><button type="button" class="btn"  style="margin-right: 100px;margin-top: 30px;">
+            Try Added TryOn Products 
+            <i class="fa fa-camera-retro"></i>
+          </button>
+         </a>
+         <a href="static/assets/images/Usage.jpeg" target="_blank"><button class="btn" style="margin-right: 100px;margin-top: 50px;">
+          Read Instructions Before Uploading
+         <i class="bi bi-cloud-plus-fill"></i>
+       </button>
+       </a>
+         
+          
+          <div role="progressbar" class="progress-bar progress-bar-striped bg-danger" >
+            <div class="mdc-linear-progress__buffering-dots"></div>
+            <div class="mdc-linear-progress__buffer"></div>
+            <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+              <span class="mdc-linear-progress__bar-inner"></span>
+            </div>
+            <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+              <span class="mdc-linear-progress__bar-inner"></span>
+            </div>
+          </div>
+        
+        </label>
+      
+    </section>
+<script src="../static/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="../static/assets/vendor/animsition/js/animsition.min.js"></script>
+<script src="../static/assets/vendor/bootstrap/js/popper.js"></script>
+<script src="../static/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/assets/vendor/select2/select2.min.js"></script>
+<script src="../static/assets/vendor/daterangepicker/moment.min.js"></script>
+<script src="../static/assets/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="../static/assets/vendor/slick/slick.min.js"></script>
+<script src="../static/assets/js//slick-custom.js"></script>
+<script src="../static/assets/vendor/parallax100/parallax100.js"></script>
+<script src="../static/assets/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<script>
+  $('.gallery-lb').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+          delegate: 'a', // the selector for gallery item
+          type: 'image',
+          gallery: {
+            enabled:true
+          },
+          mainClass: 'mfp-fade'
+      });
+  });
+</script>
+
+<script src="../static/assets/vendor/isotope/isotope.pkgd.min.js"></script>
+<script src="../static/assets/vendor/sweetalert/sweetalert.min.js"></script>
+  <script src="../static/assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script>
+  $('.js-pscroll').each(function(){
+    $(this).css('position','relative');
+    $(this).css('overflow','hidden');
+    var ps = new PerfectScrollbar(this, {
+      wheelSpeed: 1,
+      scrollingThreshold: 1000,
+      wheelPropagation: false,
+    });
+
+    $(window).on('resize', function(){
+      ps.update();
+    })
+  });
+  var CART = []
+
+function addToCart(product) {
+  if(CART.indexOf(product) == -1){
+    CART.push(product)
+  }
+  alert("Yaaay! Product Added To TryOn List Successfully...")
+}
+
+function checkOut(){
+  alert("Checking Out....")
+  return CART.join(' ')
+}
+
+function runPyScript(input){
+  var jqXHR = $.ajax({
+    type: "POST",
+    url: "/tryall",
+    async: false,
+    data: { mydata: input }
+  });
+
+  return jqXHR.responseText;
+}
+
+function check_out(){
+  addToCart('static/assets/images/Frocks5/8.png')
+  alert("Hold On We are Preparing Trial Room for You...")
+  datatosend = CART.join(' ');
+  result = runPyScript(datatosend);
+}
+</script>
+<script src="../static/assets/js//main.js"></script>
+</main>
+</body>
+</html>
+<!-- partial -->
+
