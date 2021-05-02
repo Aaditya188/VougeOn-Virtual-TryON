@@ -57,7 +57,6 @@ $ python main.py
 <img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.38.34.jpeg"> &ensp;
 
 
-
 ## Presentation
 Check the Documentation section for Video and PPT
 
@@ -71,21 +70,18 @@ Check the Documentation section for Video and PPT
 - Firebase Authentication.
 
 <h2 align= "left"><b>Project Maintainers :</b></h2>
-
 <p align="left">
-  <img width=40% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.42.jpeg"> &ensp;
+  <img width=70% src="Screenshots/WhatsApp Image 2021-05-01 at 19.36.42.jpeg"> &ensp;
   
 
 
- ## Models we used for Testing, you can try it on your own too just pan the camera towards you
+## Models we used for Testing, you can try it on your own too just pan the camera towards you
  
- ## Accessories Model
- ![Model for Accessories](images/Access_model.jpeg)
+## Accessories Model  
+<img width=40% src="images/Access_model.jpeg"> &ensp;  
  
- 
- ## Frocks Model
- ![Model for Frocks](images/Frock_model.jpeg)
- 
- 
- ## Tops Model
- ![Model for Tops](images/Tops_model.jpeg)
+## Frocks Model  
+<img width=40% src="images/Frock_model.jpeg"> &ensp;  
+
+## Tops Model  
+<img width=40% src="images/Tops_model.jpeg"> &ensp;  
