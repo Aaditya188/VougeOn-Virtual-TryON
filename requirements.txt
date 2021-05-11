@@ -1,0 +1,3 @@
+google-trans-new==1.1.9
+discord
+requests
