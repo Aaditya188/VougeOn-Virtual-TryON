@@ -33,7 +33,7 @@ $ python main.py
    Software Used to Connect Phone Camera to PC : DroidCam (available on Play Store and https://www.dev47apps.com/droidcam/windows/)
  
 
-# WHAT YOU WILL EXPERIECNE ?
+# WHAT YOU WILL EXPERIENCE ?
   For brands, a virtual try-on can make a significant difference when it comes to marketing and sales.
   
   A virtual try-on offers customers a realistic, personalized product presentation in seconds.
